@@ -6,18 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  login = 'Login usuário';
-  senha = 'coxinha123';
-  mensagem = '';
+  n1 = null;
+  n2 = null;
+  resposta = '';
 
 constructor() {}
 
-  validar(): void{
-    if(this.login === 'boiola' && this.senha === 'coxinha123'){
-      this.mensagem = 'Usuário logado!'
-    } else {
-      this.mensagem = 'Falha na autenticação :('
+  somar(): void{
+    this.resposta = this.n1 + this.n2
     }
+  subtrair(): void{
+    this.resposta = (this.n1 - this.n2).toString();
+  }
+  multiplicar(): void{
+  }
+  dividir(): void{
+
   }
 
-}
+
+  }
